@@ -10,7 +10,7 @@ mandelResult=[]
 for i in range(2,25,1):
     average=0
     for j in range(1,11,1):
-        command = "source /etc/profile; mpirun -n "+ str(i) +" /home/windmgc/mandel.out"
+        command = "source /etc/profile; mpirun -n "+ str(i) +" /home/windmgc/mandel.out"  #Change this line to the address of executable file.
         strResult = os.popen(command).read()
         strSplit = strResult.split("\n")
         # print strSplit[0]
